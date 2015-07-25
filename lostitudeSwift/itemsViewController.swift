@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Accounts
 class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     let tableView=UITableView()
     var dataArray :[PFObject]?
@@ -16,9 +17,9 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         tableView.frame=view.frame
         tableView.backgroundColor=UIColor.redColor()
         tableView.dataSource=self
+        tableView.delegate=self
         tableView.registerClass(customTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.contentInset.top=self.navigationController!.navigationBar.frame.size.height+10
-        tableView.rowHeight=70
         tableView.separatorStyle=UITableViewCellSeparatorStyle.None
         view.addSubview(tableView)
         let query = PFQuery(className:"items")
@@ -40,10 +41,53 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
             }
+            
         }
+        
+        let accountStore = ACAccountStore()
+        let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
+        accountStore.requestAccessToAccountsWithType(accountType, options: nil, completion: { (granter, error) -> Void in
+            if error == nil
+            {
+                let accounts=accountStore.accountsWithAccountType(accountType)
+                let twitterAccount = accounts.first
+                print(twitterAccount?.username)
+            }
+            else
+            {
+                print(error)
+            }
+        })
+        
+        
+
         // Do any additional setup after loading the view.
     }
     
+    
+    func updateGeoPoints()
+    {
+        
+        PFGeoPoint.geoPointForCurrentLocationInBackground {
+            (geoPoint: PFGeoPoint?, error: NSError?) -> Void in
+            if error == nil {
+                print(geoPoint)
+                if let objects = self.dataArray as [PFObject]? {
+                    for object in objects {
+                        object["Location"]=geoPoint
+                        object.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+//                            print("Object has been saved.")
+                        }
+                    }
+                }
+                // do something with the new geoPoint
+            }
+            else
+            {
+                print(error)
+            }
+        }
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let x = dataArray?.count
@@ -79,14 +123,24 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }
         return cell!
         
-        
     }
-
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        return 70
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        print("sdakjfnasdkf")
+        self.performSegueWithIdentifier("showMap", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*

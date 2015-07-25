@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427063511B641F57002AA4EC /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427063501B641F57002AA4EC /* mapViewController.swift */; };
+		428E8E541B63F4F50055B1C4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E8E531B63F4F50055B1C4 /* Accounts.framework */; };
 		42B6CAB91B639C54009B2C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B6CAB81B639C54009B2C08 /* AppDelegate.swift */; };
 		42B6CABB1B639C54009B2C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B6CABA1B639C54009B2C08 /* ViewController.swift */; };
 		42B6CABE1B639C54009B2C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B6CABC1B639C54009B2C08 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		427063501B641F57002AA4EC /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		428E8E531B63F4F50055B1C4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		42B6CAB51B639C54009B2C08 /* lostitudeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lostitudeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B6CAB81B639C54009B2C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B6CABA1B639C54009B2C08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428E8E541B63F4F50055B1C4 /* Accounts.framework in Frameworks */,
 				42B6CAE41B639CBB009B2C08 /* libsqlite3.dylib in Frameworks */,
 				42B6CAE21B639CA8009B2C08 /* libz.1.dylib in Frameworks */,
 				42B6CAD91B639C8A009B2C08 /* AudioToolbox.framework in Frameworks */,
@@ -84,6 +89,7 @@
 		42B6CAAC1B639C54009B2C08 = {
 			isa = PBXGroup;
 			children = (
+				428E8E531B63F4F50055B1C4 /* Accounts.framework */,
 				42B6CAE31B639CBB009B2C08 /* libsqlite3.dylib */,
 				42B6CAE11B639CA8009B2C08 /* libz.1.dylib */,
 				42B6CAD11B639C8A009B2C08 /* AudioToolbox.framework */,
@@ -110,6 +116,7 @@
 		42B6CAB71B639C54009B2C08 /* lostitudeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				427063501B641F57002AA4EC /* mapViewController.swift */,
 				42FF69A01B63CA0B0017D7B8 /* cross.png */,
 				42FF69A11B63CA0B0017D7B8 /* tick.png */,
 				42FF699E1B63B5530017D7B8 /* customTableViewCell.swift */,
@@ -202,6 +209,7 @@
 				42B6CABB1B639C54009B2C08 /* ViewController.swift in Sources */,
 				42B6CAE61B63A399009B2C08 /* itemsViewController.swift in Sources */,
 				42FF699F1B63B5530017D7B8 /* customTableViewCell.swift in Sources */,
+				427063511B641F57002AA4EC /* mapViewController.swift in Sources */,
 				42B6CAB91B639C54009B2C08 /* AppDelegate.swift in Sources */,
 				42B6CAC11B639C54009B2C08 /* lostitudeSwift.xcdatamodeld in Sources */,
 			);
@@ -314,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = lostitudeSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -326,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = lostitudeSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

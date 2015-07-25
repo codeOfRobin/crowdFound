@@ -29,7 +29,6 @@ class customTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        print(self.bounds)
         titleLabel.frame=CGRectMake(10, 10, 0.75*bounds.width, 0.66*bounds.height-20)
         self.addSubview(titleLabel)
         lastSeenAtLabel.frame = CGRectMake(10, CGRectGetMaxY(titleLabel.frame), 0.75*bounds.width, 0.33*bounds.height)
@@ -44,11 +43,13 @@ class customTableViewCell: UITableViewCell {
     
     func changeState()
     {
-        print("I'm touched at " + String((self.superview?.superview as! UITableView).indexPathForCell(self)))
         if let status = item["status"] as? Bool
         {
             item["status"] = !status
-            setStatusButtonImage()
+            self.setStatusButtonImage()
+            item.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                print("Object has been saved.")
+            }
         }
     }
     
