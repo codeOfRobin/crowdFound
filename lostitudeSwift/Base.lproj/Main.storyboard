@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="712" y="-423"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="qVx-pP-kxW">
             <objects>
-                <viewController id="57y-cH-7RV" sceneMemberID="viewController">
+                <viewController id="57y-cH-7RV" customClass="mapViewController" customModule="lostitudeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aBw-mI-4Kr"/>
                         <viewControllerLayoutGuide type="bottom" id="p1p-ca-kES"/>

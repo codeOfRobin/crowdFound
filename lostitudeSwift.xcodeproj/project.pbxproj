@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		427063511B641F57002AA4EC /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427063501B641F57002AA4EC /* mapViewController.swift */; };
+		427063551B6433D0002AA4EC /* addObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427063541B6433D0002AA4EC /* addObjectViewController.swift */; };
 		428E8E541B63F4F50055B1C4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E8E531B63F4F50055B1C4 /* Accounts.framework */; };
 		42B6CAB91B639C54009B2C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B6CAB81B639C54009B2C08 /* AppDelegate.swift */; };
 		42B6CABB1B639C54009B2C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B6CABA1B639C54009B2C08 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		427063501B641F57002AA4EC /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		427063541B6433D0002AA4EC /* addObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = addObjectViewController.swift; path = ../addObjectViewController.swift; sourceTree = "<group>"; };
 		428E8E531B63F4F50055B1C4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		42B6CAB51B639C54009B2C08 /* lostitudeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lostitudeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B6CAB81B639C54009B2C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		42B6CAB71B639C54009B2C08 /* lostitudeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				427063541B6433D0002AA4EC /* addObjectViewController.swift */,
 				427063501B641F57002AA4EC /* mapViewController.swift */,
 				42FF69A01B63CA0B0017D7B8 /* cross.png */,
 				42FF69A11B63CA0B0017D7B8 /* tick.png */,
@@ -208,6 +211,7 @@
 			files = (
 				42B6CABB1B639C54009B2C08 /* ViewController.swift in Sources */,
 				42B6CAE61B63A399009B2C08 /* itemsViewController.swift in Sources */,
+				427063551B6433D0002AA4EC /* addObjectViewController.swift in Sources */,
 				42FF699F1B63B5530017D7B8 /* customTableViewCell.swift in Sources */,
 				427063511B641F57002AA4EC /* mapViewController.swift in Sources */,
 				42B6CAB91B639C54009B2C08 /* AppDelegate.swift in Sources */,

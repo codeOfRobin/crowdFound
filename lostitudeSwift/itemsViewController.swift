@@ -132,7 +132,17 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         print("sdakjfnasdkf")
-        self.performSegueWithIdentifier("showMap", sender: self)
+        let x=mapViewController()
+        if let currentItem = dataArray?[indexPath.row]
+        {
+            if let point = currentItem["Location"]
+            {
+                print(point)
+                x.latitude=point.latitude
+                x.longitude=point.longitude
+            }
+        }
+        self.navigationController?.pushViewController(x, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,14 +153,15 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
     }
-    */
+
 
 }
