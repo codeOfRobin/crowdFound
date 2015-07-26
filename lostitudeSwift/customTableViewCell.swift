@@ -57,11 +57,11 @@ class customTableViewCell: UITableViewCell {
     {
         if item["status"] as? Bool==true
         {
-            self.statusButton.setBackgroundImage(UIImage(named: "cross"), forState: UIControlState.Normal)
+            self.statusButton.setBackgroundImage(UIImage(named: "tick"), forState: UIControlState.Normal)
         }
         else
         {
-            self.statusButton.setBackgroundImage(UIImage(named: "tick"), forState: UIControlState.Normal)
+            self.statusButton.setBackgroundImage(UIImage(named: "cross"), forState: UIControlState.Normal)
         }
     }
     override func setSelected(selected: Bool, animated: Bool) {

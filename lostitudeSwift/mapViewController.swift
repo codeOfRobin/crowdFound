@@ -15,6 +15,7 @@ class mapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 1
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 114/256, green: 128/256, blue: 220/256, alpha: 1)
         mapView.frame=view.frame
         view.addSubview(mapView)
         let location = CLLocationCoordinate2D(
@@ -33,10 +34,14 @@ class mapViewController: UIViewController {
         annotation.title = "Big Ben"
         annotation.subtitle = "London"
         mapView.addAnnotation(annotation)
-
+        self.navigationController?.navigationBar.tintColor=UIColor.whiteColor()
         // Do any additional setup after loading the view.
-    }
+        self.setNeedsStatusBarAppearanceUpdate()
 
+    }
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

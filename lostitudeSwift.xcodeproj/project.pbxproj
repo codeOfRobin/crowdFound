@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421E80291B647EAF00DD73D5 /* whiteCross.png in Resources */ = {isa = PBXBuildFile; fileRef = 421E80281B647EAF00DD73D5 /* whiteCross.png */; };
+		421E802F1B64AA1800DD73D5 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 421E802E1B64AA1800DD73D5 /* smoke.png */; };
+		421E80311B64AA1E00DD73D5 /* sherlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 421E80301B64AA1E00DD73D5 /* sherlock.png */; };
 		427063511B641F57002AA4EC /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427063501B641F57002AA4EC /* mapViewController.swift */; };
 		427063551B6433D0002AA4EC /* addObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427063541B6433D0002AA4EC /* addObjectViewController.swift */; };
 		428E8E541B63F4F50055B1C4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E8E531B63F4F50055B1C4 /* Accounts.framework */; };
@@ -24,7 +27,6 @@
 		42B6CADC1B639C8A009B2C08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAD41B639C8A009B2C08 /* CoreLocation.framework */; };
 		42B6CADD1B639C8A009B2C08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAD51B639C8A009B2C08 /* QuartzCore.framework */; };
 		42B6CADE1B639C8A009B2C08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAD61B639C8A009B2C08 /* Security.framework */; };
-		42B6CADF1B639C8A009B2C08 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAD71B639C8A009B2C08 /* StoreKit.framework */; };
 		42B6CAE01B639C8A009B2C08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAD81B639C8A009B2C08 /* SystemConfiguration.framework */; };
 		42B6CAE21B639CA8009B2C08 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAE11B639CA8009B2C08 /* libz.1.dylib */; };
 		42B6CAE41B639CBB009B2C08 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6CAE31B639CBB009B2C08 /* libsqlite3.dylib */; };
@@ -35,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421E80281B647EAF00DD73D5 /* whiteCross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteCross.png; sourceTree = "<group>"; };
+		421E802E1B64AA1800DD73D5 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		421E80301B64AA1E00DD73D5 /* sherlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sherlock.png; sourceTree = "<group>"; };
 		427063501B641F57002AA4EC /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		427063541B6433D0002AA4EC /* addObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = addObjectViewController.swift; path = ../addObjectViewController.swift; sourceTree = "<group>"; };
 		428E8E531B63F4F50055B1C4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -54,7 +59,6 @@
 		42B6CAD41B639C8A009B2C08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		42B6CAD51B639C8A009B2C08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		42B6CAD61B639C8A009B2C08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		42B6CAD71B639C8A009B2C08 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		42B6CAD81B639C8A009B2C08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		42B6CAE11B639CA8009B2C08 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		42B6CAE31B639CBB009B2C08 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
@@ -78,7 +82,6 @@
 				42B6CADC1B639C8A009B2C08 /* CoreLocation.framework in Frameworks */,
 				42B6CADD1B639C8A009B2C08 /* QuartzCore.framework in Frameworks */,
 				42B6CADE1B639C8A009B2C08 /* Security.framework in Frameworks */,
-				42B6CADF1B639C8A009B2C08 /* StoreKit.framework in Frameworks */,
 				42B6CAE01B639C8A009B2C08 /* SystemConfiguration.framework in Frameworks */,
 				42B6CAD01B639C61009B2C08 /* Parse.framework in Frameworks */,
 				42B6CACF1B639C61009B2C08 /* Bolts.framework in Frameworks */,
@@ -100,7 +103,6 @@
 				42B6CAD41B639C8A009B2C08 /* CoreLocation.framework */,
 				42B6CAD51B639C8A009B2C08 /* QuartzCore.framework */,
 				42B6CAD61B639C8A009B2C08 /* Security.framework */,
-				42B6CAD71B639C8A009B2C08 /* StoreKit.framework */,
 				42B6CAD81B639C8A009B2C08 /* SystemConfiguration.framework */,
 				42B6CAB71B639C54009B2C08 /* lostitudeSwift */,
 				42B6CAB61B639C54009B2C08 /* Products */,
@@ -118,6 +120,9 @@
 		42B6CAB71B639C54009B2C08 /* lostitudeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				421E802E1B64AA1800DD73D5 /* smoke.png */,
+				421E80301B64AA1E00DD73D5 /* sherlock.png */,
+				421E80281B647EAF00DD73D5 /* whiteCross.png */,
 				427063541B6433D0002AA4EC /* addObjectViewController.swift */,
 				427063501B641F57002AA4EC /* mapViewController.swift */,
 				42FF69A01B63CA0B0017D7B8 /* cross.png */,
@@ -168,6 +173,15 @@
 				TargetAttributes = {
 					42B6CAB41B639C54009B2C08 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7G2XZXD8B4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -196,6 +210,9 @@
 			files = (
 				42B6CAC61B639C54009B2C08 /* LaunchScreen.storyboard in Resources */,
 				42FF69A31B63CA0B0017D7B8 /* tick.png in Resources */,
+				421E80311B64AA1E00DD73D5 /* sherlock.png in Resources */,
+				421E802F1B64AA1800DD73D5 /* smoke.png in Resources */,
+				421E80291B647EAF00DD73D5 /* whiteCross.png in Resources */,
 				42B6CAC31B639C54009B2C08 /* Assets.xcassets in Resources */,
 				42FF69A21B63CA0B0017D7B8 /* cross.png in Resources */,
 				42B6CABE1B639C54009B2C08 /* Main.storyboard in Resources */,
@@ -258,6 +275,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robin Malhotra (Q7B4ER6Z34)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -302,6 +320,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robin Malhotra (Q7B4ER6Z34)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -326,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robin Malhotra (Q7B4ER6Z34)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = lostitudeSwift/Info.plist;
@@ -339,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robin Malhotra (Q7B4ER6Z34)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = lostitudeSwift/Info.plist;

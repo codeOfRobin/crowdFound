@@ -14,15 +14,17 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     var dataArray :[PFObject]?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 114/256, green: 128/256, blue: 220/256, alpha: 1)
+
         tableView.frame=view.frame
-        tableView.backgroundColor=UIColor.redColor()
         tableView.dataSource=self
         tableView.delegate=self
         tableView.registerClass(customTableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.contentInset.top=self.navigationController!.navigationBar.frame.size.height+10
+        tableView.contentInset.top=self.navigationController!.navigationBar.frame.size.height+17
         tableView.separatorStyle=UITableViewCellSeparatorStyle.None
         view.addSubview(tableView)
         let query = PFQuery(className:"items")
+        query.whereKey("major",equalTo:2)
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             
@@ -52,6 +54,9 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                 let accounts=accountStore.accountsWithAccountType(accountType)
                 let twitterAccount = accounts.first
                 print(twitterAccount?.username)
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(twitterAccount?.username, forKey: "UserName")
+                defaults.synchronize()
             }
             else
             {
@@ -59,12 +64,14 @@ class itemsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
         })
         
-        
+        self.setNeedsStatusBarAppearanceUpdate()
 
         // Do any additional setup after loading the view.
     }
     
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
     func updateGeoPoints()
     {
         
